@@ -11,6 +11,7 @@ customers = {
 for customer_id in customers:
 
     purchase_count = customers[customer_id]
+    print("Processing:", customer_id)
 
     if purchase_count >= frequent_threshold:
         print(customer_id, "=> Frequent Buyer")
